@@ -83,3 +83,29 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
         - 親のコミットIDs：どのコミットから派生したのか
     - コミットは適当な粒度で行う（多くの作業を詰め込まない）
 
+---
+
+## ソフトウェア開発プラットフォームGitHub
+
+- **[GitHub](https://github.com)**
+    - 全世界で[5,000万人以上](https://twitter.com/github/status/1258065442331074567)が利用する開発プラットフォーム
+    - 様々な[オープンソースプロジェクト](https://github.com/topics/python?l=python&o=desc&s=forks)のバージョン管理・プロジェクト管理（バグ報告・新機能提案）に利用されている
+- **主な機能**
+    - Gitのリモートリポジトリのホスティング
+    - イシュー（en: issue）によるプロジェクト管理
+    - プルリクエスト（en: pull request）によるコラボレーション
+    - GitHub Actionsによるテスト・ビルドなどの自動化
+
+---
+
+## ソフトウェア開発プラットフォームGitHub
+
+- **天文学での利用例**
+    - [解析パッケージの開発および管理](https://github.com/deshima-dev)
+    - [制御プログラムの開発および管理](https://github.com/mao-wfs)
+    - [データ解析スクリプトの管理および公開](https://github.com/eventhorizontelescope)
+    - [ドキュメンテーションの公開](https://github.com/astropenguin/azely)
+    - [論文・プロシーディング執筆](https://github.com/astropenguin/ss-2020-proceedings)
+- **ちなみにこのスライドもGitHubで管理しています**
+    - [a-lab-nagoya/git-github-tutorial](https://github.com/a-lab-nagoya/git-github-tutorial)
+
