@@ -72,6 +72,24 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
+![bg 90%](https://git-scm.com/book/en/v2/images/snapshots.png)
+
+<!-- _footer: コミットは差分ではなく独立なスナップショット (https://git-scm.com/book/en/v2/images/snapshots.png) -->
+
+---
+
+![bg 90%](https://git-scm.com/book/en/v2/images/deltas.png)
+
+<!-- _footer: これは間違った差分の考え方 (https://git-scm.com/book/en/v2/images/deltas.png) -->
+
+---
+
+![bg 90%](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
+
+<!-- _footer: ブランチを切ることで同時編集ができる (https://git-scm.com/book/en/v2/images/basic-rebase-2.png) -->
+
+---
+
 ## バージョン管理システムGit
 
 - **Gitのコミット**
