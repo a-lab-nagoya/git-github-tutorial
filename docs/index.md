@@ -236,6 +236,10 @@ $ code --install-extension mhutchie.git-graph
 
 ---
 
+![bg 80%](images/tutorial-github-issue.png)
+
+---
+
 ## Playgroundを使ったチュートリアル
 
 - **トピックブランチの作成（ローカル）**
@@ -249,6 +253,14 @@ $ code --install-extension mhutchie.git-graph
 
 ---
 
+![bg 80%](images/tutorial-topic-branch-1.png)
+
+---
+
+![bg 80%](images/tutorial-topic-branch-2.png)
+
+---
+
 ## Playgroundを使ったチュートリアル
 
 - **変更をプッシュする（ローカル→GitHub）**
@@ -259,6 +271,34 @@ $ code --install-extension mhutchie.git-graph
     - `base: main`、`compare: #1-task-a`（例）となるようにする
     - レビュワーを誰か一人指定する（例：[astropenguin](https://github.com/astropenguin)）
     - レビューが通ったらMerge pull requestからマージする
+
+---
+
+![bg 80%](images/tutorial-commit-1.png)
+
+---
+
+![bg 80%](images/tutorial-commit-2.png)
+
+---
+
+![bg 80%](images/tutorial-commit-3.png)
+
+---
+
+![bg 80%](images/tutorial-github-pr-1.png)
+
+---
+
+![bg 80%](images/tutorial-github-pr-2.png)
+
+---
+
+![bg 80%](images/tutorial-github-pr-3.png)
+
+---
+
+![bg 80%](images/tutorial-github-pr-4.png)
 
 ---
 
