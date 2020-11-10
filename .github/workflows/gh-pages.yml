@@ -18,12 +18,12 @@ jobs:
           tar xf $MARP_BINARY
       - name: Build slide deck
         run: |
-          ./marp docs/main.md -o public/index.html
+          ./marp docs/main.md -o docs/index.html
           ls -alsh
       - name: Deploy slide deck
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./docs
+          publish_dir: docs
           force_orphan: true
