@@ -109,3 +109,32 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 - **ちなみにこのスライドもGitHubで管理しています**
     - [a-lab-nagoya/git-github-tutorial](https://github.com/a-lab-nagoya/git-github-tutorial)
 
+---
+
+## [GitとGitHubを使った開発の流れ](https://guides.github.com/introduction/flow/)
+
+1. GitHub上にリモートリポジトリを作成
+1. GitHub issuesに機能追加等のissueを作成→issue番号取得
+1. ローカルにリポジトリをコピー（クローン）する
+1. ローカルでIssue番号付きのトピックブランチを作成
+1. ローカルで新機能をコミット→プッシュ
+1. Pull requestでトピックブランチをmainブランチにマージ
+    - この際に他の人によるレビューや自動テストを受ける
+    - ダメだったら修正をコミット→プッシュしてやり直し
+
+---
+
+![bg](images/github-workflow.png)
+
+---
+
+## GitとGitHubを使った開発の流れ
+
+- **なんでこんな面倒なことをするのか？**
+    - Issueとトピックブランチ
+        - 一連のコミットの目的を明確化させるとともに、開発者が一つの機能開発に集中できるようにするため
+        - （逆に言うと複数の作業を一度に行わせないようにするため）
+    - プルリクエスト
+        - トピックブランチをmain（master）にマージする前にレビューやテストを強制することでバグを未然に防ぐ
+        - 第三者からの提案を安全な形で受けられる（social coding）
+
