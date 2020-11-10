@@ -124,7 +124,9 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
-![bg](images/github-workflow.png)
+![bg fit](images/github-workflow.png)
+
+<!-- _footer: ©︎ 2020 GitHub, Inc. (https://guides.github.com/pdfs/githubflow-online.pdf) -->
 
 ---
 
