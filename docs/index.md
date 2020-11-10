@@ -213,3 +213,13 @@ $ code --install-extension mhutchie.git-graph
     - レビュワーを誰か一人指定する（例：[astropenguin](https://github.com/astropenguin)）
     - レビューが通ったらMerge pull requestからマージする
 
+---
+
+## 参考文献
+
+- [Pro Git](https://git-scm.com/book/ja/v2)
+    - Git公式ウェブサイトの日本語による詳細な解説。CUIの説明で難しいかもだが、最も信頼できるソースなのでぜひ一読を。
+- [サル先生のGit入門](https://backlog.com/ja/git-tutorial/)
+    - 豊富なイラストで初心者にも分かりやすいサイト。ただし、「差分をコミット」など一部記述が正しくない箇所もあるので注意。
+- [Understanding the GitHub flow · GitHub Guides](https://guides.github.com/introduction/flow/)
+    - 今回紹介した開発の流れ（GitHub flow）の公式の説明。なお、[git flowなど他のブランチの運用方法もあります](https://www.atmarkit.co.jp/ait/articles/1708/01/news015.html)。
