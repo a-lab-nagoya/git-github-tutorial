@@ -24,3 +24,15 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 1. GitとGitHubを使った開発の流れ
 1. [a-lab-nagoya/playground](https://github.com/a-lab-nagoya/playground)を使ったチュートリアル
 
+---
+
+## バージョン管理とは何か
+
+- **バージョン管理（en: version control）**
+    - ファイルやディレクトリ内容のバージョン（変更履歴＝誰がいつどのような変更を加えたか）を保存して、変更内容を確認したり任意の時点に戻したりできるようにすること
+- **バージョン管理システム（en: version control system or VCS）**
+    - バージョン管理を支援するコマンドラインツールやアプリ
+- **色々なバージョン管理システム**
+    - Git, Subversion, Mercurial: コマンドラインツール
+    - macOS Time Machine: Mac全体のバックアップ
+
