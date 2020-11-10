@@ -111,6 +111,24 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
+![bg 70%](images/deshima-sensitivity-code.png)
+
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+
+---
+
+![bg 70%](images/deshima-sensitivity-issues.png)
+
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+
+---
+
+![bg 70%](images/deshima-sensitivity-actions.png)
+
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+
+---
+
 ## [GitとGitHubを使った開発の流れ](https://guides.github.com/introduction/flow/)
 
 1. GitHub上にリモートリポジトリを作成
