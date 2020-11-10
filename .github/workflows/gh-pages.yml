@@ -1,0 +1,22 @@
+name: GitHub Pages
+
+on: push
+
+jobs:
+  job:
+    name: GitHub Pages
+    runs-on: ubuntu-latest
+    env:
+      MARP_DL_URL: https://github.com/marp-team/marp-cli/releases/download
+      MARP_VERSION: v0.22.0
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          MARP_BINARY=marp-cli-$MARP_VERSION-linux.tar.gz
+          wget $MARP_DL_URL/$MARP_VERSION/$MARP_BINARY
+          tar xf $MARP_BINARY
+      - name: Build slide deck
+        run: |
+          ./marp docs/main.md -o public/index.html
+          ls -alsh
