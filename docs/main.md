@@ -138,3 +138,76 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
         - トピックブランチをmain（master）にマージする前にレビューやテストを強制することでバグを未然に防ぐ
         - 第三者からの提案を安全な形で受けられる（social coding）
 
+---
+
+## Playgroundを使ったチュートリアル
+
+- **事前準備**
+    - Gitのインストール（各自）
+    - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)（VS Code）のインストール（各自）
+    - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)（VS Code拡張機能）のインストール（各自）
+    - [GitHub](https://github.com/)アカウントの作成（各自）
+    - GitHubアカウントの[A-lab organization](https://github.com/a-lab-nagoya)への登録（谷口）
+
+```shell
+$ brew install git
+$ brew cask install visual-studio-code
+$ code --install-extension mhutchie.git-graph
+```
+
+---
+
+## Playgroundを使ったチュートリアル
+
+- **リモートリポジトリのクローン（en: clone）**
+    - [playground](https://github.com/a-lab-nagoya/playground)をクローンし、ローカルリポジトリを作成する
+    - ローカルリポジトリをVS Codeで開く
+    ```shell
+    $ git clone https://github.com/a-lab-nagoya/playground.git
+    $ code playground # またはVS Codeでplaygroundディレクトリを開く
+    ```
+- **VS Codeの機能の概観**
+    - VS Codeのエクスプローラ・ソース管理の機能を確認する
+    - Git Graphでコミット履歴を見る（`⌘⇧P` → view git graph）
+
+---
+
+## Playgroundを使ったチュートリアル
+
+- **Gitの初期設定（ローカル）**
+    - `ctrl-backquote`でVS Codeのターミナルを開いて以下を設定する
+    ```shell
+    $ git config --global user.name "<your name>"
+    $ git config --global user.email "<your email address>"
+    ```
+- **GitHub issueの作成（GitHub）**
+    - [New issue](https://github.com/a-lab-nagoya/playground/issues)からissueを作成する（何でも良い）
+    - Issueの例：[タスクAを完了させる · Issue #1](https://github.com/a-lab-nagoya/playground/issues/1)
+    - 発行されたissue番号（例：#1）を各自で控えておく
+
+---
+
+## Playgroundを使ったチュートリアル
+
+- **トピックブランチの作成（ローカル）**
+    - VS Codeでブランチを作成する（`⌘⇧P` → create branch）
+    - ブランチ名にはissue番号を含める（例：#1-task-a）
+- **ファイルやコードを編集する（ローカル）**
+    - ここでは`2020/todo.md`の該当タスクにチェックを付ける
+- **変更をコミットする（ローカル）**
+    - VS Codeのソース管理から変更をコミットする
+    - メッセージにはissue番号を含める（例：#1 Resolve task A）
+
+---
+
+## Playgroundを使ったチュートリアル
+
+- **変更をプッシュする（ローカル→GitHub）**
+    - リモートブランチへプッシュする（`⌘⇧P` → push）
+    - Git Graphでプッシュされたことを確認してみよう
+- **変更をマージする（GitHub）**
+    - [New pull request](https://github.com/a-lab-nagoya/playground/compare)からトピックブランチをmainブランチにマージするためのプルリクエストを作成する
+    - `base: main`、`compare: #1-task-a`（例）となるようにする
+    - レビュワーを誰か一人指定する（例：[astropenguin](https://github.com/astropenguin)）
+    - レビューが通ったらMerge pull requestからマージする
+
