@@ -95,7 +95,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
-![bg 90%](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
+![bg 90%](https://backlog.com/ja/git-tutorial/assets/img/stepup/stepup2_1.png)
 
 <!-- _footer: ブランチを切ることで同時編集ができる (https://git-scm.com/book/en/v2/images/basic-rebase-2.png) -->
 
