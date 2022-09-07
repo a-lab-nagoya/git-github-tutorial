@@ -20,11 +20,10 @@ jobs:
           args: docs/index.md -o docs/index.html
         env:
           MARP_USER: root:root
-      - name: Rename docs
-        run: mv docs ${{ steps.tag.outputs.tag }}
       - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v3
         with:
+          destination_dir: ${{ steps.tag.outputs.tag }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ${{ steps.tag.outputs.tag }}
+          publish_dir: docs
