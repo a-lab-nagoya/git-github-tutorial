@@ -1,0 +1,17 @@
+{
+    "name": "git-github-tutorial",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "extensions": [
+        "github.vscode-pull-request-github",
+        "marp-team.marp-vscode",
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "settings": {
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true
+    }
+}
