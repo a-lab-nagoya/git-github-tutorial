@@ -7,7 +7,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 # Git and GitHub tutorial
 
-**@ 2020-11-10 / by Akio Taniguchi (A-lab, postdoc)**
+**@ 2022-09-07 / by Akio Taniguchi (A-lab, postdoc)**
 
 - **目的：**
     - 世界標準のバージョン管理システム[Git](https://git-scm.com/)と開発プラットフォーム[GitHub](https://github.com/)を使ったソフトウェア開発の方法をざっくり学ぶ
@@ -52,7 +52,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 ## バージョン管理システムGit
 
 - **[Git](https://git-scm.com/)**
-    - 2020年現在、ソフトウェア開発において最も使われているVCS
+    - 2022年現在、ソフトウェア開発において最も使われているVCS
     - もともとは[Linuxのソースコード](https://github.com/torvalds/linux)管理のために作成された
 - **分散型のバージョン管理**
     - リポジトリ（en: repository）と呼ばれる、変更履歴を保存するデータベースのような仕組みを使ってバージョン管理する
@@ -117,7 +117,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 ## ソフトウェア開発プラットフォームGitHub
 
 - **[GitHub](https://github.com)**
-    - 全世界で[5,000万人以上](https://twitter.com/github/status/1258065442331074567)が利用する開発プラットフォーム
+    - 全世界で[8,300万人以上](https://github.com/about)が利用する開発プラットフォーム
     - 様々な[オープンソースプロジェクト](https://github.com/topics/python?l=python&o=desc&s=forks)のバージョン管理・プロジェクト管理（バグ報告・新機能提案）に利用されている
 - **主な機能**
     - Gitのリモートリポジトリのホスティング
@@ -173,7 +173,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ![bg fit](images/github-workflow.png)
 
-<!-- _footer: ©︎ 2020 GitHub, Inc. (https://guides.github.com/pdfs/githubflow-online.pdf) -->
+<!-- _footer: ©︎ 2022 GitHub, Inc. (https://guides.github.com/pdfs/githubflow-online.pdf) -->
 
 ---
 
@@ -246,7 +246,7 @@ $ code --install-extension mhutchie.git-graph
     - VS Codeでブランチを作成する（`⌘⇧P` → create branch）
     - ブランチ名にはissue番号を含める（例：#1-task-a）
 - **ファイルやコードを編集する（ローカル）**
-    - ここでは`2020/todo.md`の該当タスクにチェックを付ける
+    - ここでは`2022/todo.md`の該当タスクにチェックを付ける
 - **変更をコミットする（ローカル）**
     - VS Codeのソース管理から変更をコミットする
     - メッセージにはissue番号を含める（例：#1 Resolve task A）
