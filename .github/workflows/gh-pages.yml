@@ -1,32 +1,27 @@
 name: GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types:
+      - created
 
 jobs:
   job:
     name: GitHub Pages
     runs-on: ubuntu-latest
-    env:
-      MARP_DL_URL: https://github.com/marp-team/marp-cli/releases/download
-      MARP_VERSION: v0.22.0
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: |
-          MARP_BINARY=marp-cli-$MARP_VERSION-linux.tar.gz
-          wget $MARP_DL_URL/$MARP_VERSION/$MARP_BINARY
-          tar xf $MARP_BINARY
-      - name: Build slide deck
-        run: |
-          ./marp docs/index.md -o docs/index.html
-          ls -alsh
-      - name: Deploy slide deck
+      - name: Build docs
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: docs/index.md -o docs/index.html
+        env:
+          MARP_USER: root:root
+      - name: Rename docs
+        run: mv docs ${GITHUB_REF##*/}
+      - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: docs
-          force_orphan: true
+          publish_dir: ${GITHUB_REF##*/}
