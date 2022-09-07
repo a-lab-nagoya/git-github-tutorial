@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Get tag
+        id: tag
+        run: echo "::set-output name=tag::${GITHUB_REF##*/}"
       - name: Build docs
         uses: docker://marpteam/marp-cli:latest
         with:
@@ -18,10 +21,10 @@ jobs:
         env:
           MARP_USER: root:root
       - name: Rename docs
-        run: mv docs ${GITHUB_REF##*/}
+        run: mv docs ${{ steps.tag.outputs.tag }}
       - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ${GITHUB_REF##*/}
+          publish_dir: ${{ steps.tag.outputs.tag }}
