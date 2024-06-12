@@ -146,21 +146,21 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
-![bg 70%](images/deshima-sensitivity-code.png)
+![bg 80%](images/decode-code.png)
 
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
-
----
-
-![bg 70%](images/deshima-sensitivity-issues.png)
-
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode) -->
 
 ---
 
-![bg 70%](images/deshima-sensitivity-actions.png)
+![bg 80%](images/decode-issues.png)
 
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode/issues) -->
+
+---
+
+![bg 80%](images/decode-actions.png)
+
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode/actions) -->
 
 ---
 
@@ -259,11 +259,11 @@ $ code --install-extension mhutchie.git-graph
 
 ---
 
-![bg 80%](images/tutorial-topic-branch-1.png)
+![bg 90%](images/tutorial-topic-branch-1.png)
 
 ---
 
-![bg 80%](images/tutorial-topic-branch-2.png)
+![bg 90%](images/tutorial-topic-branch-2.png)
 
 ---
 
@@ -280,31 +280,35 @@ $ code --install-extension mhutchie.git-graph
 
 ---
 
-![bg 80%](images/tutorial-commit-1.png)
+![bg 90%](images/tutorial-commit-1.png)
 
 ---
 
-![bg 80%](images/tutorial-commit-2.png)
+![bg 90%](images/tutorial-commit-2.png)
 
 ---
 
-![bg 80%](images/tutorial-commit-3.png)
+![bg 90%](images/tutorial-commit-3.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-1.png)
+![bg 90%](images/tutorial-github-pr-1.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-2.png)
+![bg 90%](images/tutorial-github-pr-2.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-3.png)
+![bg 90%](images/tutorial-github-pr-3.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-4.png)
+![bg 90%](images/tutorial-github-pr-4.png)
+
+---
+
+![bg 90%](images/tutorial-github-pr-5.png)
 
 ---
 
