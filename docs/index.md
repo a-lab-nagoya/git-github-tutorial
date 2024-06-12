@@ -7,7 +7,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 # Git and GitHub tutorial
 
-**@ 2022-09-07 / by Akio Taniguchi (A-lab, postdoc)**
+**@ 2024-06-12 / by Akio Taniguchi (project assistant professor)**
 
 - **目的：**
     - 世界標準のバージョン管理システム[Git](https://git-scm.com/)と開発プラットフォーム[GitHub](https://github.com/)を使ったソフトウェア開発の方法をざっくり学ぶ
@@ -49,10 +49,16 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
+![bg 80%](https://cdn-ak.f.st-hatena.com/images/fotolife/t/tanisuke_str/20180811/20180811131457.jpg)
+
+<!-- _footer: こうなることを避けたい… (https://tanisukestr.hatenablog.com/entry/2018/08/11/154820) -->
+
+---
+
 ## バージョン管理システムGit
 
 - **[Git](https://git-scm.com/)**
-    - 2022年現在、ソフトウェア開発において最も使われているVCS
+    - 2024年現在、ソフトウェア開発において最も使われているVCS
     - もともとは[Linuxのソースコード](https://github.com/torvalds/linux)管理のために作成された
 - **分散型のバージョン管理**
     - リポジトリ（en: repository）と呼ばれる、変更履歴を保存するデータベースのような仕組みを使ってバージョン管理する
@@ -117,7 +123,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 ## ソフトウェア開発プラットフォームGitHub
 
 - **[GitHub](https://github.com)**
-    - 全世界で[8,300万人以上](https://github.com/about)が利用する開発プラットフォーム
+    - 全世界で[1億人以上](https://github.com/about)が利用する開発プラットフォーム
     - 様々な[オープンソースプロジェクト](https://github.com/topics/python?l=python&o=desc&s=forks)のバージョン管理・プロジェクト管理（バグ報告・新機能提案）に利用されている
 - **主な機能**
     - Gitのリモートリポジトリのホスティング
@@ -140,21 +146,21 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 ---
 
-![bg 70%](images/deshima-sensitivity-code.png)
+![bg 80%](images/decode-code.png)
 
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
-
----
-
-![bg 70%](images/deshima-sensitivity-issues.png)
-
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode) -->
 
 ---
 
-![bg 70%](images/deshima-sensitivity-actions.png)
+![bg 80%](images/decode-issues.png)
 
-<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/deshima-sensitivity) -->
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode/issues) -->
+
+---
+
+![bg 80%](images/decode-actions.png)
+
+<!-- _footer: DESHIMAプロジェクトにおけるバージョン管理 (https://github.com/deshima-dev/decode/actions) -->
 
 ---
 
@@ -226,13 +232,13 @@ $ code --install-extension mhutchie.git-graph
 - **Gitの初期設定（ローカル）**
     - `ctrl-backquote`でVS Codeのターミナルを開いて以下を設定する
     ```shell
-    $ git config --global user.name "<your name>"
-    $ git config --global user.email "<your email address>"
+    $ git config --global user.name "<your name in romaji>"
+    $ git config --global user.email "<your public email address>"
     ```
 - **GitHub issueの作成（GitHub）**
     - [New issue](https://github.com/a-lab-nagoya/playground/issues)からissueを作成する（何でも良い）
-    - Issueの例：[タスクAを完了させる · Issue #1](https://github.com/a-lab-nagoya/playground/issues/1)
-    - 発行されたissue番号（例：#1）を各自で控えておく
+    - Issueの例：[Work Bのタスクを完了させる #51](https://github.com/a-lab-nagoya/playground/issues/51)
+    - 発行されたissue番号（例：#51）を各自で控えておく
 
 ---
 
@@ -244,20 +250,20 @@ $ code --install-extension mhutchie.git-graph
 
 - **トピックブランチの作成（ローカル）**
     - VS Codeでブランチを作成する（`⌘⇧P` → create branch）
-    - ブランチ名にはissue番号を含める（例：#1-task-a）
+    - ブランチ名にはissue番号を含める（例：astropenguin/issue51）
 - **ファイルやコードを編集する（ローカル）**
-    - ここでは`2022/todo.md`の該当タスクにチェックを付ける
+    - ここでは`2024/todo.md`の該当タスクにチェックを付ける
 - **変更をコミットする（ローカル）**
     - VS Codeのソース管理から変更をコミットする
-    - メッセージにはissue番号を含める（例：#1 Resolve task A）
+    - メッセージにはissue番号を含める（#51 Close task of Work B）
 
 ---
 
-![bg 80%](images/tutorial-topic-branch-1.png)
+![bg 90%](images/tutorial-topic-branch-1.png)
 
 ---
 
-![bg 80%](images/tutorial-topic-branch-2.png)
+![bg 90%](images/tutorial-topic-branch-2.png)
 
 ---
 
@@ -268,37 +274,41 @@ $ code --install-extension mhutchie.git-graph
     - Git Graphでプッシュされたことを確認してみよう
 - **変更をマージする（GitHub）**
     - [New pull request](https://github.com/a-lab-nagoya/playground/compare)からトピックブランチをmainブランチにマージするためのプルリクエストを作成する
-    - `base: main`、`compare: #1-task-a`（例）となるようにする
+    - `base: main`、`compare: <作成した自分のブランチ名>`となるようにする
     - レビュワーを誰か一人指定する（例：[astropenguin](https://github.com/astropenguin)）
     - レビューが通ったらMerge pull requestからマージする
 
 ---
 
-![bg 80%](images/tutorial-commit-1.png)
+![bg 90%](images/tutorial-commit-1.png)
 
 ---
 
-![bg 80%](images/tutorial-commit-2.png)
+![bg 90%](images/tutorial-commit-2.png)
 
 ---
 
-![bg 80%](images/tutorial-commit-3.png)
+![bg 90%](images/tutorial-commit-3.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-1.png)
+![bg 90%](images/tutorial-github-pr-1.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-2.png)
+![bg 90%](images/tutorial-github-pr-2.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-3.png)
+![bg 90%](images/tutorial-github-pr-3.png)
 
 ---
 
-![bg 80%](images/tutorial-github-pr-4.png)
+![bg 90%](images/tutorial-github-pr-4.png)
+
+---
+
+![bg 90%](images/tutorial-github-pr-5.png)
 
 ---
 
